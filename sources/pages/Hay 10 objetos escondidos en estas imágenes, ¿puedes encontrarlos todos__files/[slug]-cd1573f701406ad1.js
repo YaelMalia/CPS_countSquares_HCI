@@ -1,0 +1,2 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[858],{47890:function(n,u,_){(window.__NEXT_P=window.__NEXT_P||[]).push(["/[editionOrAuthor]/[authorOrSlug]/[slug]",function(){return _(83052)}])}},function(n){n.O(0,[914,19,553,389,951,292,210,774,888,179],(function(){return u=47890,n(n.s=u);var u}));var u=n.O();_N_E=u}]);
+//# sourceMappingURL=[slug]-cd1573f701406ad1.js.map
