@@ -1,0 +1,278 @@
+*{
+    font-family:monospace;
+}
+
+body{
+    text-align: center;
+    height: 100%;
+    display: block;
+}
+
+.logo1, .logo2, .logo3{
+    text-align: center;
+    width: 33%;
+    height: 120px;
+}
+.header{
+    padding-top: 20px;
+    width: 100%;
+    display:flex;
+
+    box-shadow: 1px 1px 19px -1px rgba(0,0,0,0.66);
+-webkit-box-shadow: 1px 1px 19px -1px rgba(0,0,0,0.66);
+-moz-box-shadow: 1px 1px 19px -1px rgba(0,0,0,0.66);
+}
+
+#Inputmodos{
+    background-color: #36C2BE;
+}
+/* Estilos para la parte central */
+.juego{
+    min-width: max-content;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: grid;
+    text-align: center;
+    background-color: #A0E5BC;
+    width: 90%;
+    height: 1000px;
+    margin-bottom: 50px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 37px -7px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 0px 0px 37px -7px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 0px 37px -7px rgba(0,0,0,0.56);
+
+    /* Grid */
+    grid-template-areas:
+        "superior"
+        "central"
+        "inferior";
+
+    grid-template: 
+    "superior" 20%
+    "central" 75%
+    "inferior" 5%/
+    100%;
+}
+
+.superior{
+    grid-area: superior;
+    /* background-color: aquamarine; */
+    text-align: center;
+    padding-top: 10px;
+}
+.centro{
+    padding-top: 20px;
+}
+.abajo{
+    padding-top: 20px;
+}
+.central{
+    grid-area: central;
+    /* background-color: blue; */
+    display: grid;
+    grid-template-areas:
+        "indicadores"
+        "cuadricula";
+    grid-template:
+    "indicadores" 8%
+    "cuadricula" 92% /
+        100%;
+
+}
+
+
+#AceptarConfiguraciones{
+    transition-duration: 0.5s;
+}
+
+#AceptarConfiguraciones:hover{
+    transform:scale(1.025);
+    box-shadow: 0px 0px 37px -7px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 0px 0px 37px -7px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 0px 37px -7px rgba(0,0,0,0.56);
+}
+
+#Verificar{
+    transition-duration: 0.5s;
+}
+
+#Verificar:hover{
+    transform:scale(1.025);
+    box-shadow: 0px 0px 37px -7px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 0px 0px 37px -7px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 0px 37px -7px rgba(0,0,0,0.56);
+}
+
+.indicadores{
+    padding-top: 20px;
+    grid-area: indicadores;
+    display: grid;
+    grid-template-areas:
+    "izq"
+    "der";
+    grid-template:
+    "izq der" 100%/
+     80% 20%;
+}
+.cuadricula{
+    grid-area: cuadricula;
+    /* background-color: aqua; */
+    text-align: center;
+}
+
+.izq{
+    grid-area: izq;
+}
+.der{
+    text-align: right;
+    grid-area: der;
+}
+.inferior{
+    grid-area: inferior;
+    /* background-color: yellow; */
+    text-align: center;
+}
+
+/* Cuadros */
+.cuadritos{
+    /* background-color: blue; */
+    margin-top: 40px;
+    border-radius: 20px;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+.C{
+    border:solid;
+    border-color: #428D8B;
+    border-radius: 5px;
+    width: 25%;
+    height: 25%;
+}
+.C:hover{
+    background-color: #428D8B ;
+}
+.Cinterior{
+    display:none;
+    background-color: #595454b9;
+    border:solid;
+    border-color: #353636;
+    width: 105%;
+    height: 105%;
+    border-radius: 5px;
+}
+/* Fin cuadros */
+
+
+/* Fin de estilos para la parte central */
+
+
+
+
+
+
+
+/* Selección cuadricula */
+
+.SeleccionC{
+    min-width: max-content;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+    padding-top: 25px;
+    position:sticky;
+    z-index: 1000;
+    width:50%;
+    height: 680px;
+    background-color: #57bfbc;
+    border-radius: 20px;
+    box-shadow: 0px 0px 37px -7px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 0px 0px 37px -7px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 0px 37px -7px rgba(0,0,0,0.56);
+}
+
+.SC{
+    margin-top: 40px;
+    width: 480px;
+    height: 480px;
+    background-color: rgb(11, 144, 157);
+    border-radius: 12px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+.SS{
+    background-color: rgba(44, 121, 121);
+    width: 120px;
+    height: 120px;
+    border-radius: 6px;
+    border:solid;
+    border-color: #428d8b62;
+}
+
+.SS:hover{
+    background-color: #1f5554 ;
+}
+
+#Cancelar{
+    transition-duration: 0.5s;
+}
+
+#Cancelar:hover{
+    transform:scale(1.05);
+    box-shadow: 0px 0px 37px -7px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 0px 0px 37px -7px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 0px 37px -7px rgba(0,0,0,0.56);
+}
+
+#AceptarCC{
+    transition-duration: 0.5s;
+}
+
+#AceptarCC:hover{
+    transform:scale(1.05);
+    box-shadow: 0px 0px 37px -7px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 0px 0px 37px -7px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 0px 37px -7px rgba(0,0,0,0.56);
+}
+
+
+
+/* Fin Selección cuadrícula */
+
+
+
+
+/* Responsive design */
+
+@media(max-width:768px){
+    body{
+        width: 150%;
+    }
+    .header{
+        width: auto;
+    }
+    #footer{
+        height: 30%;
+        font-size: small;
+    }
+
+    .lg1{
+        width: 95px;
+        height: 47.5px;
+    }
+    .lg2{
+        width:100px;
+        height: 47.5px;
+    }
+    .lg3{
+        width:105px;
+        height: 40px;
+    }
+}
+
+/* Fin responsive */
